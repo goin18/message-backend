@@ -7,10 +7,10 @@ export const API_BASE_URL = isDevelopment
 
 export const API_ENDPOINTS = {
   messages: {
-    getAll: `${API_BASE_URL}/message`,
-    getOne: (id: string) => `${API_BASE_URL}/message/${id}`,
-    create: `${API_BASE_URL}/message`,
-    update: (id: string) => `${API_BASE_URL}/message/${id}`,
-    delete: (id: string) => `${API_BASE_URL}/message?id=${id}`,
+    getAll: `${API_BASE_URL}/messages`,
+    getOne: (id: string) => `${API_BASE_URL}/messages/${id}`,
+    create: `${API_BASE_URL}/messages`,
+    update: (id: string) => `${API_BASE_URL}/messages/${id}`,
+    delete: (id: string) => `${API_BASE_URL}/messages?id=${id}`,
   },
 }; 

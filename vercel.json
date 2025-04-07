@@ -2,8 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "page.tsx",
-      "use": "@vercel/node"
+      "src": "package.json",
+      "use": "@vercel/next"
     }
   ],
   "routes": [
@@ -11,5 +11,9 @@
       "src": "/(.*)",
       "dest": "/"
     }
-  ]
+  ],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "NEXT_PUBLIC_API_URL": "https://your-vercel-url.vercel.app/api"
+  }
 } 
