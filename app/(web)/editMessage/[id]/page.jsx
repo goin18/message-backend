@@ -21,7 +21,6 @@ const EditMessage = async ({ params }) => {
   const { id } = params;
   const message = await getMessageById(id);
   const { title, description } = message.data;
-
   return (
     <div>
       <EditMessageForm id={id} title={title} description={description} />

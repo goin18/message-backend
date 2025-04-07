@@ -1,19 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/"
-    }
-  ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri",
-    "NEXT_PUBLIC_API_URL": "https://your-vercel-url.vercel.app/api"
-  }
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs"
 } 
