@@ -9,7 +9,8 @@ import { API_ENDPOINTS } from "@/app/config/api";
 
 const getMessage = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/message", {
+    console.log(`MessageList getMessage: ${API_ENDPOINTS.messages.getAll}`);
+    const res = await fetch(API_ENDPOINTS.messages.getAll, {
       cache: "no-store",
     });
     if (!res.ok) {
